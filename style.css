@@ -1,0 +1,131 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#headBar {
+  background-color: #99896F;
+  width: 100vw;
+  height: 56px;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#pageTitle {
+  /* margin: 0px;
+  padding: 0px;
+  padding-left: 1vw; */
+  font-size: 24px;
+  display: flex;
+  font-family: Saira;
+  font-weight: bold;
+}
+
+#navigation {
+  font-size: 18px;
+  right: 4vw;
+  font-family: Saira;
+  font-weight: medium;
+  justify-content: space-around;
+}
+
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.pageNames {
+  display: inline-block;
+  text-align: right;
+}
+
+#indexCover {
+  width: 100vw;
+  height: 60vw;
+  background-image: url(coverPage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#indexTitleSection {
+  font-family: Rubik;
+  font-size: 7vw;
+  height: 36vw;
+}
+
+#overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10vw;
+}
+
+#ovTitle {
+  font-family: Saira;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+#ovContent {
+  margin-top: 3vw;
+  width: 50vw;
+  padding: 6vw;
+  position: relative;
+  margin-bottom: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Saira;
+  font-size: 1.2vw;
+}
+
+#ovContent:before {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 6vw;
+    border-top: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#ovContent:after {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 6vw;
+    border-bottom: 0.5vw solid black;
+    border-right: 0.5vw solid black;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
