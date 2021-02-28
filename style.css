@@ -21,25 +21,24 @@ html {
   top: 0px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 #pageTitle {
-  /* margin: 0px;
-  padding: 0px;
-  padding-left: 1vw; */
+  padding-left: 1vw;
   font-size: 24px;
-  display: flex;
   font-family: Saira;
   font-weight: bold;
 }
 
 #navigation {
   font-size: 18px;
-  right: 4vw;
   font-family: Saira;
   font-weight: medium;
-  justify-content: space-around;
+  padding-right: 2vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 a:link {
@@ -54,12 +53,22 @@ a:visited {
 
 a:hover {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .pageNames {
-  display: inline-block;
-  text-align: right;
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
+  padding-left: 0.50vw;
+  padding-right: 0.5vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.pageNames:hover {
+  background-color: rgba(200, 183, 167, 1);
+  /* background-color: rgba(175, 155, 123, 1); */
 }
 
 #indexCover {
@@ -83,7 +92,7 @@ a:hover {
 #overview {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding-top: 10vw;
 }
 
@@ -100,8 +109,6 @@ a:hover {
   padding: 6vw;
   position: relative;
   margin-bottom: 10vw;
-  margin-left: auto;
-  margin-right: auto;
   font-family: Saira;
   font-size: 1.2vw;
 }
@@ -128,4 +135,996 @@ a:hover {
     position: absolute;
     right: 0px;
     bottom: 0px;
+}
+
+#indexDataSection {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 2)),
+  url(images/pic1.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding-bottom: 10vw;
+  padding-top: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.dataColumns {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5vw;
+}
+
+.dataBox1 {
+  box-sizing: border-box;
+  width: 20vw;
+  height: 27vw;
+  background-image: linear-gradient(to bottom, rgba(175, 155, 123, 0), rgba(175, 155, 123, 0.35));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dataBox2 {
+  box-sizing: border-box;
+  width: 20vw;
+  height: 27vw;
+  background-image: linear-gradient(to bottom, rgba(175, 155, 123, 0.4), rgba(175, 155, 123, 0.95));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dataPicContainer {
+  padding-top: 2vw;
+  padding-bottom: 1.5vw;
+}
+
+.dataPics {
+  width: 16vw;
+  height: 12vw;
+}
+
+.dataText {
+  font-family: Saira;
+  font-size: 1.2vw;
+  text-align: left;
+  width: 18vw;
+  padding-left: 1vw;
+  text-shadow: 1px 1px #c7cbd3;
+}
+
+#reasonSection {
+  padding-bottom: 9vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#reasonSectionTitle {
+  font-family: Russo One;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: left;
+  padding: 3vw;
+  position: relative;
+  width: 65vw;
+  margin-top: 10vw;
+  margin-bottom: 7vw;
+}
+
+#reasonSectionTitle:after {
+    content: "";
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-bottom: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.reasons {
+  width: 92vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 35.5vw;
+  margin-bottom: 4vw;
+}
+
+#reasonsColumn2 {
+  align-items: flex-end;
+}
+
+.reasonPics {
+  width: 21vw;
+  height: 14vw;
+}
+
+.reasonBox {
+  width: 25vw;
+  height: 31.5vw;
+  background-color: rgba(200, 183, 167, 0.85);
+  box-sizing: border-box;
+  padding: 2vw;
+  text-align: center;
+}
+
+#evenReason {
+  align-self: flex-end;
+}
+
+#evenReason2 {
+  align-self: flex-start;
+}
+
+.reasonTitle {
+  font-family: Saira;
+  font-weight: bold;
+  font-size: 1.5vw;
+  text-align: left;
+  padding-top: 1.5vw;
+  padding-bottom: 0.5vw;
+}
+
+.reasonDetails {
+  font-family: Saira;
+  font-size: 1.2vw;
+  text-align: left;
+}
+
+#speciesCover {
+  width: 100vw;
+  height: 60vw;;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 2)),
+  url(images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 56px;
+}
+
+#speciesTitle {
+  font-family: Rubik;
+  font-size: 7vw;
+  height: 30vw;
+}
+
+#gradientSection {
+  background-image: linear-gradient(to bottom, white, #C8B7A7);
+  display: flex;
+  flex-direction: column;
+}
+
+#speciesDataSection {
+  padding-bottom: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#speciesDataSectionTitle {
+  font-family: Russo One;
+  font-size: 2vw;
+  font-weight: bold;
+  padding-top: 3vw;
+  padding-bottom: 4vw;
+}
+
+#speciesData {
+  text-align: center;
+  border-top: 0.7vw solid black;
+  border-bottom: 0.7vw solid black;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  width: 85vw;
+  font-family: Saira;
+  font-size: 1.3vw;
+}
+
+.dataNumbers {
+  font-weight: bold;
+  font-size: 3.5vw;
+}
+
+.speciesDataLeftBoxes {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20vw;
+  border-right: 0.7vw solid black;
+  padding: 2vw;
+  vertical-align: top;
+}
+
+#speciesDataRightBox {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20vw;
+  padding: 2vw;
+  vertical-align: top;
+}
+
+#endangeredSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#endangeredSectionTitle {
+  font-family: Russo One;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: left;
+  padding: 3vw;
+  position: relative;
+  width: 65vw;
+  margin-top: 10vw;
+  margin-bottom: 7vw;
+}
+
+#endangeredSectionTitle:after {
+    content: "";
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-bottom: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#endangeredGallery {
+  padding-bottom: 5vw;
+  width: 100%;
+}
+
+.endangeredGalleryColumns {
+  width: 100vw;
+}
+
+.endangeredBoxes {
+  box-sizing: border-box;
+  width: 25vw;
+  height: 25vw;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: top;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.3vw;
+  padding-top: 0.5vw;
+}
+
+.endangeredName {
+  font-weight: bold;
+  font-family: Saira;
+  font-size: 1.5vw;
+  text-align: left;
+  padding-top: 1.5vw;
+  padding-bottom: 0.5vw;
+  text-decoration: underline;
+  padding-left: 1vw;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.endangeredSub {
+  font-size: 1.3vw;
+  font-family: Saira;
+  text-align: left;
+  padding-left: 1vw;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.endangeredIntro {
+  font-size: 1.15vw;
+  font-family: Saira;
+  text-align: left;
+  padding: 1vw;
+  color: #000;
+}
+
+#leopard {
+  background-image: url(endangered/leopard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#leopardIntro {
+  display: none;
+}
+
+#leopard:hover #leopardIntro {
+  display: block;
+}
+
+#leopard:hover #leopardName{
+  display: none;
+}
+
+#leopard:hover #leopardScien{
+  display: none;
+}
+
+#leopard:hover #leopardNumber{
+  display: none;
+}
+
+#leopard:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/leopard.jpg);
+}
+
+#rhino {
+  background-image: url(endangered/black_rhino.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#rhinoIntro {
+  display: none;
+}
+
+#rhino:hover #rhinoIntro {
+  display: block;
+}
+
+#rhino:hover #rhinoName{
+  display: none;
+}
+
+#rhino:hover #rhinoScien{
+  display: none;
+}
+
+#rhino:hover #rhinoNumber{
+  display: none;
+}
+
+#rhino:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/black_rhino.jpg);
+}
+
+#ferret {
+  background-image: url(endangered/ferret.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ferretIntro {
+  display: none;
+}
+
+#ferret:hover #ferretIntro {
+  display: block;
+}
+
+#ferret:hover #ferretName{
+  display: none;
+}
+
+#ferret:hover #ferretScien{
+  display: none;
+}
+
+#ferret:hover #ferretNumber{
+  display: none;
+}
+
+#ferret:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/ferret.jpg);
+}
+
+#elephant {
+  background-image: url(endangered/elephant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#elephantIntro {
+  display: none;
+}
+
+#elephant:hover #elephantIntro {
+  display: block;
+}
+
+#elephant:hover #elephantName{
+  display: none;
+}
+
+#elephant:hover #elephantScien{
+  display: none;
+}
+
+#elephant:hover #elephantNumber{
+  display: none;
+}
+
+#elephant:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/elephant.jpg);
+}
+
+#turtle {
+  background-image: url(endangered/turtle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#turtleIntro {
+  display: none;
+}
+
+#turtle:hover #turtleIntro {
+  display: block;
+}
+
+#turtle:hover #turtleName{
+  display: none;
+}
+
+#turtle:hover #turtleScien{
+  display: none;
+}
+
+#turtle:hover #turtleNumber{
+  display: none;
+}
+
+#turtle:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/turtle.jpg);
+}
+
+#saola {
+  background-image: url(endangered/saola.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#saolaIntro {
+  display: none;
+}
+
+#saola:hover #saolaIntro {
+  display: block;
+}
+
+#saola:hover #saolaName{
+  display: none;
+}
+
+#saola:hover #saolaScien{
+  display: none;
+}
+
+#saola:hover #saolaNumber{
+  display: none;
+}
+
+#saola:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/saola.jpg);
+}
+
+#gorilla {
+  background-image: url(endangered/gorilla.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gorillaIntro {
+  display: none;
+}
+
+#gorilla:hover #gorillaIntro {
+  display: block;
+}
+
+#gorilla:hover #gorillaName{
+  display: none;
+}
+
+#gorilla:hover #gorillaScien{
+  display: none;
+}
+
+#gorilla:hover #gorillaNumber{
+  display: none;
+}
+
+#gorilla:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/gorilla.jpg);
+}
+
+#sunda {
+  background-image: url(endangered/tiger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sundaIntro {
+  display: none;
+}
+
+#sunda:hover #sundaIntro {
+  display: block;
+}
+
+#sunda:hover #sundaName{
+  display: none;
+}
+
+#sunda:hover #sundaScien{
+  display: none;
+}
+
+#sunda:hover #sundaNumber{
+  display: none;
+}
+
+#sunda:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/tiger.jpg);
+}
+
+#extinctSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#extinctSectionTitle {
+  font-family: Russo One;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: left;
+  padding: 3vw;
+  position: relative;
+  width: 65vw;
+  margin-top: 10vw;
+  margin-bottom: 7vw;
+}
+
+#extinctSectionTitle:after {
+    content: "";
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-bottom: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#extinctGallery {
+  padding-bottom: 10vw;
+  width: 100%;
+}
+
+.extinctGalleryColumns {
+  width: 100vw;
+}
+
+.extinctBoxes {
+  box-sizing: border-box;
+  width: 20vw;
+  height: 30vw;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: top;
+}
+
+.extinctName {
+  font-family: Saira;
+  font-weight: bold;
+  font-size: 1.5vw;
+  padding-left: 1vw;
+  text-align: left;
+  padding-top: 1.5vw;
+  padding-bottom: 0.5vw;
+  text-decoration: underline;
+  padding-left: 1vw;
+  color: #000;
+  text-shadow: 2px 2px 8px #fff;
+}
+
+.extinctIntro {
+  display: none;
+  font-size: 1.15vw;
+  font-family: Saira;
+  text-align: left;
+  padding: 1vw;
+  color: #fff;
+}
+
+#Rhinoceros {
+  background-image: url(extinct/Rhinoceros.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#RhinocerosIntro {
+  display: none;
+}
+
+#Rhinoceros:hover #RhinocerosIntro {
+  display: block;
+}
+
+#Rhinoceros:hover #RhinocerosName{
+  display: none;
+}
+
+#Rhinoceros:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/Rhinoceros.jpg);
+}
+
+#Baiji {
+  background-image: url(extinct/baiji.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#BaijiIntro {
+  display: none;
+}
+
+#Baiji:hover #BaijiIntro {
+  display: block;
+}
+
+#Baiji:hover #BaijiName{
+  display: none;
+}
+
+#Baiji:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/baiji.jpg);
+}
+
+#Ibex {
+  background-image: url(extinct/ibex.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#IbexIntro {
+  display: none;
+}
+
+#Ibex:hover #IbexIntro {
+  display: block;
+}
+
+#Ibex:hover #IbexName{
+  display: none;
+}
+
+#Ibex:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/ibex.jpg);
+}
+
+#pigeon {
+  background-image: url(extinct/pigeon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pigeonIntro {
+  display: none;
+}
+
+#pigeon:hover #pigeonIntro {
+  display: block;
+}
+
+#pigeon:hover #pigeonName{
+  display: none;
+}
+
+#pigeon:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/pigeon.jpg);
+}
+
+#tiger {
+  background-image: url(extinct/tiger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tigerIntro {
+  display: none;
+}
+
+#tiger:hover #tigerIntro {
+  display: block;
+}
+
+#tiger:hover #tigerName{
+  display: none;
+}
+
+#tiger:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/tiger.jpg);
+}
+
+#seaCow {
+  background-image: url(extinct/sea_cow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#seaCowIntro {
+  display: none;
+}
+
+#seaCow:hover #seaCowIntro {
+  display: block;
+}
+
+#seaCow:hover #seaCowName{
+  display: none;
+}
+
+#seaCow:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/sea_cow.png);
+}
+
+#auk {
+  background-image: url(extinct/auk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#aukIntro {
+  display: none;
+}
+
+#auk:hover #aukIntro {
+  display: block;
+}
+
+#auk:hover #aukName{
+  display: none;
+}
+
+#auk:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/auk.jpg);
+}
+
+#parakeet {
+  background-image: url(extinct/parakeet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parakeetIntro {
+  display: none;
+}
+
+#parakeet:hover #parakeetIntro {
+  display: block;
+}
+
+#parakeet:hover #parakeetName{
+  display: none;
+}
+
+#parakeet:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/parakeet.jpg);
+}
+
+#pupfish {
+  background-image: url(extinct/fish.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pupfishIntro {
+  display: none;
+}
+
+#pupfish:hover #pupfishIntro {
+  display: block;
+}
+
+#pupfish:hover #pupfishName{
+  display: none;
+}
+
+#pupfish:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/fish.jpg);
+}
+
+#pooUli {
+  background-image: url(extinct/poo-uli.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pooUliIntro {
+  display: none;
+}
+
+#pooUli:hover #pooUliIntro {
+  display: block;
+}
+
+#pooUli:hover #pooUliName{
+  display: none;
+}
+
+#pooUli:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/poo-uli.jpg);
+}
+
+#actionCover {
+  width: 100vw;
+  height: 60vw;;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 2)),
+  url(images/treatment.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 56px;
+}
+
+#actionCoverTitle {
+  font-family: Rubik;
+  font-size: 7vw;
+  height: 50vw;
+  width: 80vw;
+}
+
+#actionIntroContainer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+#actionIntroPara {
+  width: 50vw;
+  position: relative;
+  padding: 6vw;
+  font-family: Saira;
+  font-size: 1.2vw;
+}
+
+#actionIntroPara:before {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 6vw;
+    border-top: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#actionIntroPara:after {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 6vw;
+    border-bottom: 0.5vw solid black;
+    border-right: 0.5vw solid black;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+#actionsSection {
+  padding-bottom: 10vw;
+}
+
+#actionsSectionTitleContainer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+#actionsSectionTitle {
+  font-family: Russo One;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: left;
+  padding: 3vw;
+  position: relative;
+  width: 65vw;
+  margin-top: 10vw;
+  margin-bottom: 7vw;
+}
+
+#actionsSectionTitle:after {
+    content: "";
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-bottom: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#accordions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+input {
+    display: none;
+}
+
+label {
+  width: 60vw;
+  margin-top: 1.5vw;
+  padding: 1.1vw;
+  cursor: pointer;
+  background: #af9b7b;
+  transition: ease .5s;
+  position: relative; /* ADDING THIS IS REQUIRED */
+  font-size: 1.3vw;
+  font-family: Saira;
+  font-weight: bold;
+}
+
+label:hover {
+  background: #7c7256;
+}
+
+label::after {
+  content: '+';
+  font-size: 2.5vw;
+  font-family: Saira;
+  font-weight: bold;
+  position: absolute;
+  right: 2vw;
+  top: 0px;
+}
+
+input:checked + label::after {
+  content: '-';
+  font-size: 2.5vw;
+  font-family: Saira;
+  font-weight: bold;
+  position: absolute;
+  right: 2vw;
+  top: 0px;
+}
+
+.actionContent {
+  width: 60vw;
+  font-size: 1.2vw;
+  font-family: Saira;
+}
+
+input + label + .actionContent {
+  display: none;
+}
+
+input:checked + label + .actionContent {
+  display: block;
+}
+
+#underline {
+  text-decoration: underline;
 }
